@@ -9,6 +9,7 @@ main()
 
     int rem;
     int rev = 0;
+    int res = n;
 
     do
     {
@@ -17,5 +18,5 @@ main()
         n /= 10;
     } while (n != 0);
 
-    cout<< "Reverse = " << rev;
+    (res == rev) ? cout << "Palindrom Number." : cout << "Not Palindrom number.";
 }

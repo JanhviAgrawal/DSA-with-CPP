@@ -7,11 +7,12 @@ main()
     cout << "Enter any number: ";
     cin >> n;
 
-    int count = 0;
+    int i = 1;
+    int sum = 0;
     do
     {
-        count++;
-        n /= 10;
-    } while (n != 0);
-    cout << "Length = " << count;
+        sum += i;
+        i++;
+    } while (i <= n);
+    cout << "Sum = " << sum << endl;
 }

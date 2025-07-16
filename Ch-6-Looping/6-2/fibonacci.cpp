@@ -11,7 +11,7 @@ main()
     cin >> n;
     cout << a << "\t" << b << "\t";
 
-    do
+    while (i <= n)
     {
         int c = a + b;
         cout << c << "\t";
@@ -19,5 +19,5 @@ main()
         b = c;
 
         i++;
-    } while (i <= n);
+    }
 }

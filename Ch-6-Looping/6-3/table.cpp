@@ -7,11 +7,10 @@ main()
     cout << "Enter any number: ";
     cin >> n;
 
-    int count = 0;
+    int i = 1;
     do
     {
-        count++;
-        n /= 10;
-    } while (n != 0);
-    cout << "Length = " << count;
+        cout << n << " * " << i << " = " << n * i << endl;
+        i++;
+    } while (i <= 10);
 }

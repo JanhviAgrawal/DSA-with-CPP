@@ -4,18 +4,16 @@ using namespace std;
 main()
 {
     int n;
-    cout << "Enter any number: ";
+    cout << "Enter any Number: ";
     cin >> n;
-
     int rem;
     int rev = 0;
 
-    do
+    while (n != 0)
     {
         rem = n % 10;
         rev = rev * 10 + rem;
-        n /= 10;
-    } while (n != 0);
-
-    cout<< "Reverse = " << rev;
+        n = n / 10;
+    }
+    cout << rev;
 }

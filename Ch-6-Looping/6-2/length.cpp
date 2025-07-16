@@ -8,10 +8,10 @@ main()
     cin >> n;
 
     int count = 0;
-    do
+    while (n != 0)
     {
         count++;
         n /= 10;
-    } while (n != 0);
-    cout << "Length = " << count;
+    }
+    cout<< "Length = " << count;
 }
