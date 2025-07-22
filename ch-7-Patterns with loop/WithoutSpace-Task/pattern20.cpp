@@ -7,7 +7,7 @@ main()
     {
         for (int j = i; j <= 5; j++)
         {
-            cout << j % 2 << " ";
+            (j % 2 == 0) ? cout << "| " : cout << "- ";
         }
         cout << endl;
     }
