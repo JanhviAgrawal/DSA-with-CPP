@@ -18,8 +18,8 @@ main()
             {
                 if (j % 2 != 0)
                 {
-                    cout << (50 - num * 20) << "\t";
-                    n++;
+                    cout << (n - num * 20) << "\t";
+                    num++;
                 }
                 else
                 {
