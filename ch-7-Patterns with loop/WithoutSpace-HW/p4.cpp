@@ -5,8 +5,6 @@ main()
 {
     for (int i = 5; i >= 1; i--)
     {
-        int n = 50;
-        int num = 0;
         for (int j = 5; j >= i; j--)
         {
             if (i % 2 != 0)
@@ -18,8 +16,7 @@ main()
             {
                 if (j % 2 != 0)
                 {
-                    cout << (n - num * 20) << "\t";
-                    num++;
+                    cout << j * 10 << "\t";
                 }
                 else
                 {
