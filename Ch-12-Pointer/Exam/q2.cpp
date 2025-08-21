@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// UDF to calculate and print cubes using pointers
 void printCubes(int *ptr, int row, int col)
 {
     cout << endl
