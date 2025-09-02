@@ -10,7 +10,8 @@ main()
 
     int len = 0;
 
-    for (int i = 0; name[i] != '\0'; i++, len++);
+    for (int i = 0; name[i] != '\0'; i++, len++)
+        ;
 
-    cout<<"Length : "<<len;
+    cout << "Length : " << len;
 }
