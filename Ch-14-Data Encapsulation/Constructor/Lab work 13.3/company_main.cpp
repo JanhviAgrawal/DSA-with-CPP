@@ -1,5 +1,6 @@
 #include "Company.cpp"
 
-int main() {
+int main()
+{
     handleCompanies();
 }
