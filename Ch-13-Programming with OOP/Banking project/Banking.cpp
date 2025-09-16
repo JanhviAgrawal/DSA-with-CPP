@@ -5,7 +5,7 @@ using namespace std;
 class BankAccount
 {
     long int accountNumber;
-    char accountHolderName[30];
+    char accountHolderName[50];
 
 protected:
     long double balance;
