@@ -1,10 +1,12 @@
 #include <iostream>
+#define MAX 100
 using namespace std;
 
+template <typename T>
 class Stack
 {
 private:
-    int *arr;
+    T *arr;
     int size;
     int top;
     int len;
@@ -13,25 +15,18 @@ public:
     Stack(int size)
     {
         this->size = size;
-        this->arr = new int[size];
+        this->arr = new T[size];
         this->top = -1;
         this->len = 0;
-        cout << endl;
-        cout << "Stack Created with Size: " << size << endl;
-        cout << endl;
     }
 
     ~Stack()
     {
         delete[] arr;
-        cout << endl;
-        cout << "Stack Destroyed." << endl;
-        cout << endl;
     }
 
-    void push(int element)
+    void push(T element)
     {
-        cout << endl;
         if (this->top == this->size - 1)
         {
             cout << "Stack Overflow." << endl;
@@ -41,14 +36,11 @@ public:
             this->top++;
             this->arr[this->top] = element;
             this->len++;
-            cout << "Element Pushed: " << element << endl;
         }
-        cout << endl;
     }
 
     void pop()
     {
-        cout << endl;
         if (this->top == -1)
         {
             cout << "Stack UnderFlow." << endl;
@@ -59,12 +51,10 @@ public:
             this->top--;
             this->len--;
         }
-        cout << endl;
     }
 
     void peek()
     {
-        cout << endl;
         if (this->top == -1)
         {
             cout << "Stack is Empty." << endl;
@@ -73,53 +63,57 @@ public:
         {
             cout << "Top Element: " << this->arr[this->top] << endl;
         }
-        cout << endl;
     }
 
     void display()
     {
-        cout << endl;
         if (this->top == -1)
         {
             cout << "Stack is Empty." << endl;
         }
         else
         {
-            cout << "Stack Elements: ";
+            cout << "Output : ";
             for (int i = this->top; i >= 0; i--)
             {
                 cout << this->arr[i] << " ";
             }
             cout << endl;
         }
-        cout << endl;
     }
 
     bool isEmpty()
     {
-        cout << endl;
         return this->top == -1;
-        cout << endl;
     }
 
     void isFull()
     {
-        cout << endl;
-        if (this->top == this->size - 1)
-        {
-            cout << "Stack is Full..." << endl;
-        }
-        else
-        {
-            cout << "Stack is not Full." << endl;
-        }
-        cout << endl;
+        cout << (this->top == this->size - 1 ? "Stack is Full..." : "Stack is not Full.") << endl;
     }
 
     void length()
     {
-        cout << endl;
         cout << "Stack Length: " << this->len << endl;
-        cout << endl;
+    }
+
+    bool isPalindrom(string str)
+    {
+        for (char ch : str)
+        {
+            this->push(ch);
+        }
+
+        for (char ch : str)
+        {
+            if (ch != removed())
+                return false;
+        }
+        return true;
+    }
+
+    char removed()
+    {
+        return (this->isEmpty()) ? ' ' : arr[top--];
     }
 };

@@ -6,7 +6,7 @@ int main()
     cout << "Enter Size of Stack: ";
     cin >> size;
 
-    Stack stack(size);
+    Stack<int> stack(size);
     int choice;
     int element;
 
