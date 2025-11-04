@@ -27,7 +27,7 @@ void merge(vector<int> &a, int start, int mid, int end)
     while (i <= mid)
     {
         temp.push_back(a[i]);
-        // i++;
+        i++;
     }
 
     // remaining elements of right
