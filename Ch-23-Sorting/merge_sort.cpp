@@ -22,16 +22,22 @@ void merge(vector<int> &a, int start, int mid, int end)
             j++;
         }
     }
+
+    // remaining elements of left
     while (i <= mid)
     {
         temp.push_back(a[i]);
         i++;
     }
+
+    // remaining elements of right
     while (j <= end)
     {
         temp.push_back(a[j]);
         j++;
     }
+
+    // elements from temp to array->a...
     for (int i = 0; i < temp.size(); i++)
     {
         a[i + start] = temp[i];
