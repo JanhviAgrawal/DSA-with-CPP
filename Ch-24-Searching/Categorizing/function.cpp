@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+//Desending order
 void selectionSort(vector<int> &a, int n)
 {
     for (int i = 0; i < n - 1; i++)
