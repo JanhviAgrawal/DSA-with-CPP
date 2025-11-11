@@ -74,6 +74,8 @@ void mergeSort(vector<int> &a, int start, int end)
     }
 }
 
+
+// Linear Search
 int linearSearch(vector<int> a, int n)
 {
     int search_element;
