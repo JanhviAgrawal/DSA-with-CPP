@@ -21,6 +21,7 @@ void selectionSort(vector<int> &a, int n)
     }
 }
 
+//Asending Order
 void merge(vector<int> &a, int start, int mid, int end)
 {
     vector<int> temp;
