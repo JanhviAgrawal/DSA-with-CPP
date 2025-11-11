@@ -76,7 +76,7 @@ int main()
             break;
 
         case 0:
-            cout << "Exiting...!!" << endl;
+            cout << "Exiting..!" << endl;
             break;
 
         default:
