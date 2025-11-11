@@ -68,6 +68,7 @@ int main()
             cout << endl
                  << "Enter search element : ";
             cin >> target;
+            // Binary search - Merge Sort(In asending order)
             mergeSort(a, 0, n - 1);
             index = binarySearch(a, 0, n - 1, target);
             (index == -1) ? cout << "Element Not Found..."
