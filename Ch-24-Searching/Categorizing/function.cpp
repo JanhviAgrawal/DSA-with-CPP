@@ -95,6 +95,8 @@ int linearSearch(vector<int> a, int n)
     return index;
 }
 
+
+//Binary Search
 int binarySearch(vector<int> a, int start, int end, int target)
 {
     if (start <= end)
